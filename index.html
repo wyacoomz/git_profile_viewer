@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>qr code</title>
+    <style>
+    body,html{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    h2{
+        font-size: 300%;
+    }
+    .container{
+        background-color: rgb(1, 58, 53);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .box{
+        background-color: rgba(0, 65, 95, 0.521);
+        text-align: center;
+        padding: 50px 50px;
+        border-radius: 20px;
+    }
+    .image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    button{
+        background-color: skyblue;
+        padding: 20px 50px;
+        border-radius: 20px;
+    }
+</style>
+</head>
+<body>
+    <body>
+        <div class="container">
+        <div class="box">
+            <input type="text" id="username" placeholder="enter username">
+            <br><br>
+            <button onclick="gernate()">gernate</button>
+            <br>
+            <a href="" id="link"></a>
+        </div>
+        </div>
+        <script>
+            let input =document.getElementById("username");
+            let a= document.getElementById("link");
+            function gernate(){
+                link.href="https://github.com/" + input.value;
+                document.getElementById("link").innerHTML = "View Profile";
+            }
+        </script>
+</body>
+</html>
